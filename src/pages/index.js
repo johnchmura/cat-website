@@ -10,6 +10,7 @@ export default function Home() {
         <meta name="description" content="A Next.js app with a basic navbar" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <div className={styles.rectangle}></div>
       <div className={styles.page}>
         <main className={styles.main}>
           <h1>Welcome to My Next.js App</h1>

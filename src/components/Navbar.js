@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Link href="/">MyApp</Link>
+        <Link href="/">Vitek Family Farm</Link>
       </div>
       <ul className={styles.navLinks}>
         <li>
