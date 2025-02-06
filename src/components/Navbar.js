@@ -8,14 +8,14 @@ export default function Navbar() {
         <Link href="/">Vitek Family Farm</Link>
       </div>
       <ul className={styles.navLinks}>
-        <li>
+        <li className={styles.home}>
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about">About Our Family</Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">Our Kittens</Link>
         </li>
       </ul>
     </nav>

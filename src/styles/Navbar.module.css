@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around; /* Distribute space evenly around items */
   align-items: center;
   width: 100%;
   height: 5%;
@@ -12,28 +12,37 @@
 
 .logo a {
   color: #FFEAEA;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 48px;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 1000;
   line-height: normal;
   text-decoration: none;
+}
+
+.navLinks .home a {
+  font-weight: 500;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
-  align-items: center; /* Ensure vertical alignment */
+  color: #FFEAEA;
+  font-family: "Poppins";
+  line-height: normal;
+  gap: 15vh; /* Adjust this gap as needed */
+  align-items: center; /* Ensure items and dividers are vertically centered */
+  font-weight: 300;
 }
 
 .navLinks li {
-  position: relative; /* Needed for positioning the divider */
+  position: relative;
 }
 
 .navLinks li:not(:last-child)::after {
   content: '';
   position: absolute;
-  right: -0.75rem; /* Half of the gap */
+  right: -7.5vh; /* Half of the gap value to center the divider */
   top: 50%;
   transform: translateY(-50%);
   width: 2px;
@@ -43,5 +52,6 @@
 
 .navLinks li a {
   color: white;
-  font-size: 1rem;
+  font-size: 36px;
+  text-decoration: none;
 }
